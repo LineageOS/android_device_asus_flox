@@ -212,9 +212,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    power.flox
-    
+    android.hardware.power@1.2-service-qti
+
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service    
