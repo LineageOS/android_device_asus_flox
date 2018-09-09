@@ -1,0 +1,5 @@
+# Access /dev/msm_rotator
+allow hal_graphics_composer_default video_device:chr_file rw_file_perms;
+
+# Access /sys/devices/system/soc/soc0
+r_dir_file(hal_graphics_composer_default, sysfs_soc)
