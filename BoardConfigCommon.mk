@@ -43,6 +43,10 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 BOARD_USES_CAMERA_FAST_AUTOFOCUS := false
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /system/bin/cameraserver=23 \
+    /system/bin/mediaserver=23 \
+    /system/bin/mm-qcamera-daemon=23
 USE_CAMERA_STUB := false
 
 # Display
