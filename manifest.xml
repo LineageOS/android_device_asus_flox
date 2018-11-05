@@ -92,7 +92,9 @@
             <name>IDrmFactory</name>
             <instance>default</instance>
         </interface>
-    </hal>    
+        <fqname>@1.2::ICryptoFactory/clearkey</fqname>
+        <fqname>@1.2::IDrmFactory/clearkey</fqname>
+    </hal>   
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
