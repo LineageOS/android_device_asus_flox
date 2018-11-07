@@ -101,10 +101,26 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     firmware \
     persist
 
-# Dexpreopt
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-
 # BOARD_USERDATAIMAGE_PARTITION_SIZE := 28661726720 # 26.7G
+
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+LOC_HIDL_VERSION := 3.0
+
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/configs/manifests/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifests/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/manifests/compatibility_matrix.xml
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_sdm660
+TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
+
+# Keystore
+TARGET_PROVIDES_KEYMASTER := true
+
+# Partitions
+>>>>>>> 6cf619ff... sdm660-common: Remove obsolete dex settings
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 BOARD_USES_SECURE_SERVICES := true
