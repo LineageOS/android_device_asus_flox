@@ -128,7 +128,7 @@ HAVE_ADRENO_SOURCE:= false
 
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 BUILD_BROKEN_DUP_RULES := true
 
