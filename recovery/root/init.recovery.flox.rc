@@ -1,5 +1,9 @@
 import /init.recovery.flox.usb.rc
 
+on fs
+    wait /dev/block/platform/msm_sdcc.1
+    symlink /dev/block/platform/msm_sdcc.1 /dev/block/bootdevice
+
 on enable-low-power
     # Enable Power modes and set the CPU Freq Sampling rates
     write /sys/module/rpm_resources/enable_low_power/L2_cache 1
