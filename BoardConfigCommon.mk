@@ -140,10 +140,6 @@ BOARD_GLOBAL_CPPFLAGS += -DQCOM_BSP_LEGACY
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
-# Fonts
-EXCLUDE_SERIF_FONTS := true
-SMALLER_FONT_FOOTPRINT := true
-
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
 TARGET_RECOVERY_DENSITY := hdpi
