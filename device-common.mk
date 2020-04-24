@@ -247,6 +247,7 @@ PRODUCT_PACKAGES += \
     conn_init \
     dhcpcd.conf \
     wificond \
+    WifiOverlay \
     hostapd \
     libwfcu \
     wpa_supplicant \
