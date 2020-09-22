@@ -25,7 +25,6 @@ LOCAL_CFLAGS = -Wall -Werror -DDEFAULT_ZSL_MODE_ON -DDEFAULT_DENOISE_MODE_ON
 #LOCAL_CFLAGS += -DDISABLE_DEBUG_LOG
 
 LOCAL_C_INCLUDES := \
-        $(LOCAL_PATH)/../stack/common \
         frameworks/native/include/media/hardware \
         frameworks/native/include/media/openmax \
         $(call project-path-for,qcom-media)/libstagefrighthw \
@@ -44,6 +43,8 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 LOCAL_SHARED_LIBRARIES := libcamera_client liblog libhardware libutils libcutils libdl
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface
 
+LOCAL_HEADER_LIBRARIES += camera_common_headers
+
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 #LOCAL_MODULE := camera.$(TARGET_DEVICE)
@@ -51,6 +52,11 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := camera_common_headers
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/stack/common
+include $(BUILD_HEADER_LIBRARY)
 
 #include $(LOCAL_PATH)/test/Android.mk
 
