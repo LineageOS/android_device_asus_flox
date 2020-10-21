@@ -106,8 +106,7 @@ PRODUCT_PACKAGES += \
     
 # Filesystem tools
 PRODUCT_PACKAGES += \
-    e2fsck_static \
-    resize2fs_static    
+    resize2fs_static
 
 # IPC router config
 PRODUCT_COPY_FILES += \
