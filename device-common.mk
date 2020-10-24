@@ -103,6 +103,11 @@ PRODUCT_PACKAGES += \
 # GNSS HAL
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl.legacy
+    
+# Filesystem tools
+PRODUCT_PACKAGES += \
+    e2fsck_static \
+    resize2fs_static    
 
 # IPC router config
 PRODUCT_COPY_FILES += \
