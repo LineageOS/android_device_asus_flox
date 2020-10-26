@@ -76,9 +76,9 @@
 /system/vendor/bin/mm-qcamera-daemon      u:object_r:camera_exec:s0
 /system/vendor/bin/qseecomd               u:object_r:tee_exec:s0
 /system/vendor/bin/conn_init              u:object_r:conn_init_exec:s0
-/system/vendor/bin/init\.flo\.wifi\.sh    u:object_r:conn_init_exec:s0
+/system/vendor/bin/init\.flox\.wifi\.sh    u:object_r:conn_init_exec:s0
 /system/vendor/bin/irsc_util              u:object_r:irsc_util_exec:s0
-/system/vendor/bin/init\.flo\.bt\.sh      u:object_r:bluetooth_loader_exec:s0
+/system/vendor/bin/init\.flox\.bt\.sh      u:object_r:bluetooth_loader_exec:s0
 /system/vendor/bin/init\.qcom\.devstart\.sh            u:object_r:init-qcom-devstart-sh_exec:s0
 /system/vendor/bin/init\.qcom\.devwait\.sh             u:object_r:init-qcom-devwait-sh_exec:s0
 
