@@ -208,7 +208,6 @@ PRODUCT_PACKAGES += \
     init.flox.rc \
     init.flox.power.rc \
     init.flox.usb.rc \
-    init.recovery.flox.rc \
     ueventd.rc \
     ueventd.flox.rc
 
