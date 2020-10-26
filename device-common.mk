@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/asus/flo/flo-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/flox/flox-vendor.mk)
 
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
@@ -55,7 +55,7 @@ PRODUCT_PACKAGES += \
     hci_qcomm_init
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.flo.bt.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.flo.bt.sh
+    $(LOCAL_PATH)/rootdir/etc/init.flox.bt.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.flox.bt.sh
 
 # Bluetooth HAL
 PRODUCT_PACKAGES += \
@@ -196,16 +196,16 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
-    power.flo
+    power.flox
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.flo \
-    init.flo.rc \
-    init.flo.power.rc \
-    init.flo.usb.rc \
+    fstab.flox \
+    init.flox.rc \
+    init.flox.power.rc \
+    init.flox.usb.rc \
     ueventd.rc \
-    ueventd.flo.rc
+    ueventd.flox.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.devwait.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.devwait.sh \
@@ -226,7 +226,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermald-flo.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald.conf
+    $(LOCAL_PATH)/configs/thermald-flox.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald.conf
 
 # Touchscreen calibration
 PRODUCT_COPY_FILES += \
@@ -249,11 +249,11 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.flo.wifi.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.flo.wifi.sh \
+    $(LOCAL_PATH)/rootdir/etc/init.flox.wifi.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.flox.wifi.sh \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv_flo.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_flo.bin \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv_deb.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv_flox.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_flox.bin \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv_debx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_debx.bin \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf
 

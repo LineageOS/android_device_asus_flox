@@ -19,7 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.flo
+    camera.flox
 
 # the actual meat of the device-specific product definition
 $(call inherit-product, $(LOCAL_PATH)/device-common.mk)
@@ -33,5 +33,5 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
     
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.flo:$(TARGET_COPY_OUT_RAMDISK)/fstab.flo \
-    $(LOCAL_PATH)/rootdir/etc/fstab.flo:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.flo
+    $(LOCAL_PATH)/rootdir/etc/fstab.flox:$(TARGET_COPY_OUT_RAMDISK)/fstab.flox \
+    $(LOCAL_PATH)/rootdir/etc/fstab.flox:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.flox
