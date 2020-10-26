@@ -1,15 +1,15 @@
-# Bluetooth executables and script (bdAddrLoader, init.flo.bt.sh)
+# Bluetooth executables and script (bdAddrLoader, init.flox.bt.sh)
 # type bluetooth_loader, domain, device_domain_deprecated;
 # type bluetooth_loader_exec, exec_type, file_type;
 
-# Run init.flo.bt.sh
+# Run init.flox.bt.sh
 allow bluetooth_loader shell_exec:file rx_file_perms;
 allow bluetooth_loader bluetooth_loader_exec:file rx_file_perms;
 
-# init.flo.bt.sh needs /system/bin/log access
+# init.flox.bt.sh needs /system/bin/log access
 allow bluetooth_loader devpts:chr_file rw_file_perms;
 
-# Run hci_qcomm_init from init.flo.bt.sh
+# Run hci_qcomm_init from init.flox.bt.sh
 domain_auto_trans(bluetooth_loader, hci_attach_exec, hci_attach)
 allow hci_attach bluetooth_loader:fd use;
 
@@ -21,6 +21,6 @@ r_dir_file(bluetooth_loader, persist_bluetooth_file)
 set_prop(bluetooth, bluetooth_prop)
 set_prop(bluetooth_loader, bluetooth_prop)
 
-# Allow getprop/setprop for init.flo.bt.sh
+# Allow getprop/setprop for init.flox.bt.sh
 allow bluetooth_loader system_file:file execute_no_trans;
 allow bluetooth_loader toolbox_exec:file rx_file_perms;

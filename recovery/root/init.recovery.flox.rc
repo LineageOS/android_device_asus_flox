@@ -1,4 +1,4 @@
-import /init.recovery.flo.usb.rc
+import /init.recovery.flox.usb.rc
 
 on enable-low-power
     # Enable Power modes and set the CPU Freq Sampling rates
