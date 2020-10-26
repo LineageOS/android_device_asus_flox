@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := flo
-PRODUCT_NAME := lineage_flo
+PRODUCT_DEVICE := flox
+PRODUCT_NAME := lineage_flox
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus

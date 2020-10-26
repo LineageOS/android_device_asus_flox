@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-import init.flo.power.rc
-import init.flo.usb.rc
+import init.flox.power.rc
+import init.flox.usb.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -31,7 +31,7 @@ on init
     symlink /sdcard /storage/sdcard0
 
 on fs
-    mount_all ./fstab.flo --early
+    mount_all ./fstab.flox --early
     restorecon_recursive /persist
 
     # GnssConfiguration doesn't actually look at gps.conf, just the debug file
@@ -47,7 +47,7 @@ on late-fs
     start bootanim
     start vendor.gralloc-2-0
 
-    mount_all ./fstab.flo --late
+    mount_all ./fstab.flox --late
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -257,7 +257,7 @@ service rmt_storage /vendor/bin/rmt_storage
     user root
     group system wakelock
 
-service hciattach /vendor/bin/init.flo.bt.sh
+service hciattach /vendor/bin/init.flox.bt.sh
     class late_start
     user bluetooth
     group bluetooth system
@@ -355,7 +355,7 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     user camera
     group camera system inet input
 
-service wcnss_init /vendor/bin/init.flo.wifi.sh
+service wcnss_init /vendor/bin/init.flox.wifi.sh
     class late_start
     user system
     group system wifi
