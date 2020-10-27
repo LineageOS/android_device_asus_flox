@@ -32,3 +32,6 @@ genfscon sysfs /devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-led              
 
 # Networking
 genfscon sysfs /devices/platform/msm_hsic_host/usb1/1-1/1-1:1.5/net/rmnet_usb0/mtu  u:object_r:sysfs_net:s0
+
+# Health
+genfscon sysfs /devices/i2c-0/0-0055/power_supply                                u:object_r:sysfs_battery_supply:s0
