@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#include <cutils/log.h>
 #include <hardware/sensors.h>
+#include <log/log.h>
 #include <string>
 #include <dlfcn.h>
 #include <errno.h>
