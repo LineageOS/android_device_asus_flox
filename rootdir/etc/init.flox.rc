@@ -127,6 +127,8 @@ on boot
     mkdir /data/nfc 770 nfc nfc
     mkdir /data/nfc/param 770 nfc nfc
 
+    setprop init.svc.console stopped
+
 # Assign TCP buffer thresholds to be ceiling value of technology maximums
 # Increased technology maximums should be reflected here.
     write /proc/sys/net/core/rmem_max  2097152
