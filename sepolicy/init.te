@@ -16,6 +16,7 @@ allow init {
     proc_slabinfo
     sysfs_graphics
     sysfs_msm_subsys
+    sysfs_rmnet
     sysfs_usb
     sysfs_wlan_fwpath
 }:file setattr;
