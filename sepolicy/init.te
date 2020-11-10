@@ -7,6 +7,7 @@ allow init tmpfs:lnk_file create;
 
 allow init {
     sysfs_devices_system_cpu
+    sysfs_livedisplay_tuneable
     sysfs_mpdecision
     sysfs_msm_subsys
     sysfs_net
@@ -17,6 +18,7 @@ allow init {
     sysfs_graphics
     sysfs_msm_subsys
     sysfs_rmnet
+    sysfs_surfaceflinger
     sysfs_usb
     sysfs_wlan_fwpath
 }:file setattr;
