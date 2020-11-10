@@ -23,3 +23,6 @@ allow sensors persist_sensors_file:file rw_file_perms;
 
 # Wake lock access
 wakelock_use(sensors)
+
+allow sensors sysfs_soc:dir search;
+allow sensors sysfs_soc:file { getattr read };
