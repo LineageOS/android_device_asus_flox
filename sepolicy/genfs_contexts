@@ -9,6 +9,7 @@ genfscon sysfs /devices/virtual/graphics/fb1/hpd                        u:object
 genfscon sysfs /kernel/boot_adsp/boot                                   u:object_r:sysfs_audio:s0
 genfscon sysfs /devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/rev                     u:object_r:sysfs_disk_stat:s0
 genfscon sysfs /devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/stat      u:object_r:sysfs_disk_stat:s0
+genfscon sysfs /devices/system/soc/soc0                                                     u:object_r:sysfs_soc:s0
 
 # remote storage
 genfscon sysfs /class/uio                                                        u:object_r:sysfs_rmt_storage:s0
