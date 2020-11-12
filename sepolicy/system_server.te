@@ -29,3 +29,6 @@ allow system_server sensors_data_file:dir r_file_perms;
 allow system_server sensors_socket:sock_file getattr;
 
 allow system_server thermal_service:service_manager find;
+
+get_prop(system_server, userspace_reboot_config_prop);
+get_prop(system_server, userspace_reboot_exported_prop);
