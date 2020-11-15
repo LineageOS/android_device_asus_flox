@@ -1,2 +1,4 @@
 allow priv_app device:dir r_dir_perms;
 allowxperm priv_app self:udp_socket ioctl { SIOCGIWESSID };
+dontaudit priv_app proc_interrupts:file { open read };
+dontaudit priv_app sysfs_android_usb:file open;
