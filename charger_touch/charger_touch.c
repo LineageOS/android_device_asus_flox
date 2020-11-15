@@ -18,6 +18,7 @@
 #include <hardware_legacy/uevent.h>
 #include <utils/Log.h>
 #include <fcntl.h>
+#include <string.h>
 
 #define POWER_SUPPLY_PATH "/sys/class/power_supply"
 #define TOUCH_PATH "/sys/devices/virtual/input/qcom_touch/charger"
