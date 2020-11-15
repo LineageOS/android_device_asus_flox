@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2c135212_90f5102d",
+        "filename": "sepolicy/priv_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2020-11-15T19:13:13Z",
+      "side": 1,
+      "message": "open should be added",
+      "revId": "af973a2d4d33fa3aaf3d2eabc4f562f63762e0ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
