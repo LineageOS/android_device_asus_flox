@@ -226,7 +226,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    sensor_wrapper.flox
+    sensors.msm8960
 
 # Thermal
 PRODUCT_COPY_FILES += \

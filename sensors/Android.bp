@@ -16,7 +16,7 @@
 
 cc_library_shared {
 
-    name: "sensor_wrapper.flox",
+    name: "sensors.msm8960",
 
     relative_install_path: "hw",
     proprietary: true,
