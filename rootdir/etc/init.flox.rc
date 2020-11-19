@@ -52,6 +52,8 @@ on late-fs
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
+    
+    start qcamerasvr
 
     # Busy loop to wait for devices booted by devstart_sh just in case device not ready
     exec - root root system -- /vendor/bin/init.qcom.devwait.sh
@@ -351,9 +353,10 @@ service mpdecision /vendor/bin/mpdecision --avg_comp
     disabled
 
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
-    class late_start
+    class main
     user camera
     group camera system inet input
+    disabled
 
 service wcnss_init /vendor/bin/init.flox.wifi.sh
     class late_start
