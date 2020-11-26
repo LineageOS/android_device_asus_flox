@@ -16,7 +16,7 @@ hal_client_domain(camera, hal_graphics_allocator)
 allow camera camera_socket:dir w_dir_perms;
 allow camera camera_socket:sock_file create_file_perms;
 
-type_transition camera system_data_file:file camera_data_file "fdAlbum";
+type_transition camera system_data_root_file:file camera_data_file "fdAlbum";
 allow camera camera_data_file:file create_file_perms;
 
 # Connect to sensor socket
