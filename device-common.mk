@@ -275,6 +275,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.1-service
+
 # Voice processing
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
