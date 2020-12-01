@@ -46,6 +46,9 @@ USE_XML_AUDIO_POLICY_CONF := 1
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# Dedupe VNDK libraries with identical core variants.
+TARGET_VNDK_USE_CORE_VARIANT := true
+
 # Memfd
 TARGET_HAS_MEMFD_BACKPORT := true
 
