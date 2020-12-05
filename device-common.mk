@@ -141,10 +141,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software    
 
-# Keystore
-PRODUCT_PACKAGES += \
-    keystore.msm8960
-
 # Kickstart
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kickstart_checker.sh:$(TARGET_COPY_OUT_VENDOR)/bin/kickstart_checker.sh
