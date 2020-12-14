@@ -1,3 +1,6 @@
+# proc labels
+genfscon proc /last_kmsg                      u:object_r:proc_last_kmsg:s0
+
 # sysfs
 genfscon sysfs /class/android_usb/f_rmnet_smd_sdio/transport                     u:object_r:sysfs_rmnet:s0
 genfscon sysfs /devices/virtual/android_usb/android0/f_rmnet_smd_sdio/transport  u:object_r:sysfs_rmnet:s0
