@@ -55,7 +55,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libwvdrmengine.so)
+        vendor/lib/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so "${2}"
             ;;
     esac
