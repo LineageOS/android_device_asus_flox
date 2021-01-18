@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f900868_270931c4",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2021-01-18T06:27:04Z",
+      "side": 1,
+      "message": "Remove the whitespace while you\u0027re at it.",
+      "revId": "12691203e56b16a34b3e32e992b53b11f7f7dbfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
