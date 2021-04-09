@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/asus/flox/flox-vendor.mk)
+$(call inherit-product, vendor/asus/flox/flox-vendor.mk)
 
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
