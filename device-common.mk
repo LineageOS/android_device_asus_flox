@@ -39,8 +39,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 # Audio configuration
-USE_XML_AUDIO_POLICY_CONF := 1
-
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
