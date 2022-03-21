@@ -269,7 +269,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwfcu \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    WifiOverlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.flox.wifi.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.flox.wifi.sh \
