@@ -16,6 +16,8 @@
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+COMMON_PATH := device/asus/flox
+
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
@@ -59,7 +61,7 @@ BLUETOOTH_HCI_USE_MCT := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8960
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 
 # Display
 TARGET_SCREEN_DENSITY := 320
@@ -131,8 +133,8 @@ HAVE_ADRENO_SOURCE:= false
 
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -144,11 +146,11 @@ BOARD_GLOBAL_CPPFLAGS += -DQCOM_BSP_LEGACY
 USE_MINIKIN := true
 
 # Recovery
-TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
+TARGET_RECOVERY_DEVICE_DIRS := $($(COMMON_PATH))
 TARGET_RECOVERY_DENSITY := hdpi
 
 # Device manifest
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 include vendor/asus/flox/BoardConfigVendor.mk
