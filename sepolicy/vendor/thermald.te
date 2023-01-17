@@ -42,6 +42,7 @@ r_dir_file(thermald, sysfs_socinfo)
 # Connect to mpdecision.
 allow thermald mpdecision_socket:dir r_dir_perms;
 unix_socket_connect(thermald, mpdecision, mpdecision)
+unix_socket_connect(thermald, qmux)
 
 allow thermald sysfs_soc:dir r_dir_perms;
 allow thermald sysfs_soc:file r_file_perms;
