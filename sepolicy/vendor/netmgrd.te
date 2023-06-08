@@ -32,3 +32,5 @@ allow netmgrd proc_net:dir r_dir_perms;
 set_prop(netmgrd, radio_prop)
 auditallow netmgrd radio_prop:property_service set;
 set_prop(netmgrd, net_radio_prop)
+
+allow netmgrd qmux:unix_stream_socket connectto;

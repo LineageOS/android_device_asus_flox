@@ -45,3 +45,5 @@ unix_socket_connect(thermald, mpdecision, mpdecision)
 
 allow thermald sysfs_soc:dir r_dir_perms;
 allow thermald sysfs_soc:file r_file_perms;
+
+allow thermald qmux:unix_stream_socket connectto;

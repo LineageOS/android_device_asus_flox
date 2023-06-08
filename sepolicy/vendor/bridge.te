@@ -16,3 +16,5 @@ qmux_socket(bridge)
 allow bridge sysfs_rmnet:file { open read write getattr };
 
 allow bridge sysfs_android_usb:dir r_dir_perms;
+
+allow bridge qmux:unix_stream_socket connectto;
