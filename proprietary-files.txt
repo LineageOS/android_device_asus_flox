@@ -25,7 +25,7 @@ bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 bin/irsc_util:vendor/bin/irsc_util
 bin/ks:vendor/bin/ks
 bin/mm-qcamera-app:vendor/bin/mm-qcamera-app
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|11bfd2652574d22220a1a1628bcc00be174c533b
 bin/mm-qjpeg-enc-test:vendor/bin/mm-qjpeg-enc-test
 bin/mm-qomx-ienc-test:vendor/bin/mm-qomx-ienc-test
 bin/mpdecision:vendor/bin/mpdecision
@@ -37,8 +37,8 @@ bin/qmuxd:vendor/bin/qmuxd
 bin/qseecomd:vendor/bin/qseecomd
 bin/radish:vendor/bin/radish
 bin/rmt_storage:vendor/bin/rmt_storage
-bin/sensors.qcom:vendor/bin/sensors.qcom
-bin/thermald:vendor/bin/thermald
+bin/sensors.qcom:vendor/bin/sensors.qcom|a9adc4408395f005c068cbf6b45ab2c9ed99cb24
+bin/thermald:vendor/bin/thermald|111fee3bd1267cc1341ec6bceb2493f8b8d22e13
 bin/usbhub:vendor/bin/usbhub
 bin/usbhub_init:vendor/bin/usbhub_init
 etc/DxHDCP.cfg:vendor/etc/DxHDCP.cfg
@@ -108,7 +108,7 @@ lib/libqmi_csvt_srvc.so:vendor/lib/libqmi_csvt_srvc.so
 lib/libqmi_encdec.so:vendor/lib/libqmi_encdec.so
 lib/libQSEEComAPI.so:vendor/lib/libQSEEComAPI.so
 vendor/lib/libsc-a3xx.so
-lib/libsensor1.so:vendor/lib/libsensor1.so
+lib/libsensor1.so:vendor/lib/libsensor1.so|60b15d4618bf509916e106df5947fe021d0f9de5
 lib/libsensor_reg.so:vendor/lib/libsensor_reg.so
 lib/libsensor_user_cal.so:vendor/lib/libsensor_user_cal.so
 lib/libstagefright_hdcp.so:vendor/lib/libstagefright_hdcp.so
