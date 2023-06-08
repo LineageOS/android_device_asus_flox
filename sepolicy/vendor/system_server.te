@@ -33,3 +33,7 @@ allow system_server thermal_service:service_manager find;
 get_prop(system_server, exported_camera_prop);
 get_prop(system_server, userspace_reboot_config_prop);
 get_prop(system_server, userspace_reboot_exported_prop);
+
+allow system_server mdm_device:chr_file r_file_perms;
+
+allow system_server qmux:unix_stream_socket connectto;

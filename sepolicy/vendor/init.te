@@ -2,6 +2,7 @@ allow init diag_device:chr_file unlink;
 allow init sysfs_mmc_host:file rw_file_perms;
 allow init sysfs:file { rw_file_perms setattr };
 allow init proc_last_kmsg:file { r_file_perms setattr };
+allow init proc_swap:file rw_file_perms;
 
 # Symlink /sdcard to backing block
 allow init tmpfs:lnk_file create;
