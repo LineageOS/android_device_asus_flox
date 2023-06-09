@@ -44,8 +44,9 @@ set_prop(kickstart, radio_prop)
 # Access /sys/module/rmnet_usb/parameters/rmnet_data_init
 allow kickstart sysfs_rmnet:file w_file_perms;
 
-allow kickstart efs_data_file:file rw_file_perms;
-allow kickstart efs_data_file:dir r_dir_perms;
+allow kickstart efs_data_file:file { rw_file_perms create_file_perms };
+allow kickstart efs_data_file:dir rw_dir_perms;
 allow kickstart efsbridgehsic_device:chr_file rw_file_perms;
 allow kickstart ksbridgehsic_device:chr_file rw_file_perms;
 allow kickstart mdm_device:chr_file r_file_perms;
+allow kickstart usbfs:dir r_dir_perms;
