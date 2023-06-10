@@ -1,3 +1,8 @@
+#
+# Copyright (C) 2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
 ifneq ($(filter flox debx,$(TARGET_DEVICE)),)
 
 LOCAL_PATH:= $(call my-dir)
