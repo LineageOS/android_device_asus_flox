@@ -1,39 +1,39 @@
-# Bluetooth
-vendor.qcom.bluetooth.soc=pronto
-ro.qualcomm.bt.hci_transport=smd
-ro.bluetooth.hfp.ver=1.6
-
 # Audio
-# Monitor device rotation for speaker channel swap
-ro.audio.monitorRotation=true
-# Enable AAC 5.1 output
-media.aac_51_output_enabled=true
-# Audio HAL configuration
 audio.offload.disable=1
+media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
+ro.audio.monitorRotation=true
+ro.config.media_vol_steps=25
 ro.qc.sdk.audio.fluencetype=none
+persist.audio.fluence.speaker=true
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
 qcom.hw.aac.encoder=true
 
-# Media volume steps
-ro.config.media_vol_steps=25
+# Bluetooth
+ro.bluetooth.hfp.ver=1.6
+ro.qualcomm.bt.hci_transport=smd
+vendor.qcom.bluetooth.soc=pronto
 
 # Camera
 camera.disable_zsl_mode=1
 
+# Dalvik/ART
+dalvik.vm.dex2oat-swap=false
+
+# Display
+persist.hwc.mdpcomp.enable=true
+
 # DRM
 drm.service.enabled=true
 
-# Wifi
-wifi.interface=wlan0
+# Graphics
+debug.hwui.use_buffer_age=false
+debug.sf.enable_gl_backpressure=1
+debug.sf.latch_unsignaled=1
+ro.opengles.version=196608
 
-# Sensors
-ro.qc.sensors.wl_dis=true
-ro.qualcomm.sensors.smd=true
-
-# libhwui
+# HWUI
 ro.hwui.texture_cache_size=48
 ro.hwui.layer_cache_size=32
 ro.hwui.r_buffer_cache_size=4
@@ -46,20 +46,15 @@ ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
 
-# Dalvik/ART
-dalvik.vm.dex2oat-swap=false
-
-#Disable more Codec2.0 components
+# Media
 debug.stagefright.ccodec=0
 
-# Graphics
-ro.opengles.version=196608
-debug.hwui.use_buffer_age=false
-debug.sf.enable_gl_backpressure=1
-debug.sf.latch_unsignaled=1
+# Sensors
+ro.qc.sensors.wl_dis=true
+ro.qualcomm.sensors.smd=true
 
-# Display
-persist.hwc.mdpcomp.enable=true
-
-# Vendor security patch level
+# Vendor SPL
 ro.lineage.build.vendor_security_patch=2016-08-05
+
+# Wi-Fi
+wifi.interface=wlan0
