@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60c2bbdf_bdd527d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-06-10T22:45:33Z",
+      "side": 1,
+      "message": "$OUT is identical (minus property ordering) from before this, and after.\n\nNormally these sort of cleans are frowned on, but this tree was _nasty_.\n\nAbsolutely needed some love, and our history prior to the last few bringups...kinda sucks anyway.",
+      "revId": "4c728df5000a8111507fdfd1cfc57005cba36e85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
