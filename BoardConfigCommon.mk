@@ -131,6 +131,9 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 # VNDK
 TARGET_VNDK_USE_CORE_VARIANT := true
 
+# SVELTE config
+MALLOC_SVELTE := true
+
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn # Must come before BOARD_*_PRIVATE_LIB declarations
