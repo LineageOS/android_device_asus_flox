@@ -128,9 +128,6 @@ include device/qcom/sepolicy-legacy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 
-# SVELTE
-MALLOC_SVELTE := true
-
 # VNDK
 TARGET_VNDK_USE_CORE_VARIANT := true
 
