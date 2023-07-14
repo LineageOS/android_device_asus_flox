@@ -16,6 +16,23 @@
       "message": "Smooth operation back again",
       "revId": "6e689dd8e3f74dfa1a71deb9c302bd54ceed8f0e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9ce0155_b884ca49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-07-14T17:50:42Z",
+      "side": 1,
+      "message": "what exactly do you mean?\n\nThis makes no sense.\n\nI reverted the issues from the July build, the August build will be fixed.",
+      "revId": "6e689dd8e3f74dfa1a71deb9c302bd54ceed8f0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
