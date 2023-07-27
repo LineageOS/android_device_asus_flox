@@ -23,6 +23,7 @@ dalvik.vm.dex2oat-swap=false
 
 # Dex
 pm.dexopt.downgrade_after_inactive_days=10
+pm.dexopt.shared=quicken
 
 # Display
 persist.hwc.mdpcomp.enable=true
