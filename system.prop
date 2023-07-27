@@ -20,6 +20,7 @@ camera.disable_zsl_mode=1
 
 # Dalvik/ART
 dalvik.vm.dex2oat-swap=false
+dalvik.vm.madvise-random=true
 
 # Dex
 pm.dexopt.downgrade_after_inactive_days=10
