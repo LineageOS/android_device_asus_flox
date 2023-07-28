@@ -70,6 +70,9 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
 
+# Dex
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -141,6 +144,9 @@ PRODUCT_PACKAGES += \
 # Kickstart
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kickstart_checker.sh:$(TARGET_COPY_OUT_VENDOR)/bin/kickstart_checker.sh
+
+# Libartd
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -233,6 +239,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# Scudo
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
+  PRODUCT_DISABLE_SCUDO := true
+endif
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
@@ -241,6 +252,11 @@ PRODUCT_PACKAGES += \
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Speed Profiles
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Thermal
 PRODUCT_COPY_FILES += \
