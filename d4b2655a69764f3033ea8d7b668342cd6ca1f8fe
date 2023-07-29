@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3026dcf5_c5d2d05e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2023-07-29T19:28:07Z",
+      "side": 1,
+      "message": "why \"ReLand\", not a revert, like usually?",
+      "revId": "d4b2655a69764f3033ea8d7b668342cd6ca1f8fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c3f20901_8db4d251",
