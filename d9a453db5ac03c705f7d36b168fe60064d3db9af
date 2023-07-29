@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5994e31e_2f474ae5",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-07-29T18:36:18Z",
+      "side": 1,
+      "message": "whitespace on end of lines",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 59,
+        "endChar": 30
+      },
+      "revId": "d9a453db5ac03c705f7d36b168fe60064d3db9af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
