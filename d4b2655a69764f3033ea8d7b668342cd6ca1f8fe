@@ -57,6 +57,30 @@
       },
       "revId": "d4b2655a69764f3033ea8d7b668342cd6ca1f8fe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ce26d76_2163af4b",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 24773
+      },
+      "writtenOn": "2023-07-30T04:17:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c3f20901_8db4d251",
+      "range": {
+        "startLine": 241,
+        "startChar": 1,
+        "endLine": 241,
+        "endChar": 4
+      },
+      "revId": "d4b2655a69764f3033ea8d7b668342cd6ca1f8fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
