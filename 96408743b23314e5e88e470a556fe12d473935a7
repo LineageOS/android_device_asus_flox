@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77c594c7_584695b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-07-31T02:20:15Z",
+      "side": 1,
+      "message": "We inherit tablet-7in, we can pull all those values in and do this if we want to but seems not worth it.",
+      "revId": "96408743b23314e5e88e470a556fe12d473935a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
