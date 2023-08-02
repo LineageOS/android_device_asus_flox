@@ -38,7 +38,7 @@ LOCAL_SHARED_LIBRARIES := libcamera_client liblog libhardware libutils libcutils
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libui libcamera_metadata
 
 LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_MODULE := camera.$(TARGET_DEVICE)
+LOCAL_MODULE := camera.flox
 LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
