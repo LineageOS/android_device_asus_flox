@@ -5,10 +5,10 @@
 
 /dev/block/platform/msm_sdcc.1/by-name/system       /system         ext4    ro,barrier=1                                                                 wait,first_stage_mount
 /dev/block/platform/msm_sdcc.1/by-name/vendor       /vendor         ext4    ro,barrier=1                                                                 wait,first_stage_mount,check,formattable
-/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic     wait,check,formattable
 /dev/block/platform/msm_sdcc.1/by-name/cache        /cache          f2fs    rw,nosuid,nodev,noatime,inline_xattr                                         wait,check,formattable
-/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic     latemount,wait,check,formattable,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic     wait,check,formattable
 /dev/block/platform/msm_sdcc.1/by-name/userdata     /data           f2fs    rw,nosuid,nodev,noatime,inline_xattr                                         latemount,wait,check,formattable,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic     latemount,wait,check,formattable,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
 /dev/block/platform/msm_sdcc.1/by-name/persist      /persist        ext4    noatime,nosuid,nodev,barrier=1,data=ordered,nodelalloc                       wait
 /dev/block/platform/msm_sdcc.1/by-name/boot         /boot           emmc    defaults                                                                     defaults
 /dev/block/platform/msm_sdcc.1/by-name/recovery     /recovery       emmc    defaults                                                                     defaults
@@ -25,4 +25,4 @@
 /dev/block/platform/msm_sdcc.1/by-name/rpmb         /rpmb           emmc    defaults                                                                     defaults
 /dev/block/platform/msm_sdcc.1/by-name/abootb       /abootb         emmc    defaults                                                                     defaults
 /devices/platform/msm_hsusb_host/usb*               auto            auto    defaults                                                                     voldmanaged=usb:auto
-/dev/block/zram0                                    none            swap    defaults                                                                     zramsize=75%,max_comp_streams=4,swapprio=10,notrim
+/dev/block/zram0                                    none            swap    defaults                                                                     zramsize=536870912,notrim
