@@ -68,9 +68,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
-
 # Dex
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
