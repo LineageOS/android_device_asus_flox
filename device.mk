@@ -7,10 +7,6 @@
 # Inherit Common Configuration
 $(call inherit-product, $(LOCAL_PATH)/device-common.mk)
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.flox
-
 # Characteristics
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.carrier=wifi-only
