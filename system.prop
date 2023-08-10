@@ -1,3 +1,8 @@
+# A2DP Supported Encoders
+persist.vendor.bt.a2dp_offload_cap=sbc-aac
+persist.bluetooth.a2dp_offload.cap=sbc-aac
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac
+
 # Audio
 audio.offload.disable=1
 media.aac_51_output_enabled=true
@@ -39,6 +44,7 @@ debug.hwui.use_buffer_age=false
 debug.sf.enable_gl_backpressure=1
 debug.sf.latch_unsignaled=1
 ro.opengles.version=196608
+debug.renderengine.backend=threaded
 
 # HWUI
 ro.hwui.texture_cache_size=48
