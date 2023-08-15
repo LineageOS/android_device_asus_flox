@@ -16,6 +16,23 @@
       "message": "author: https://review.lineageos.org/c/LineageOS/android_device_google_marlin/+/361976",
       "revId": "41519e4fd3b4f70885fe7ba6b5489325d10353fe",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f636b6cf_72617ce7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-08-15T21:47:58Z",
+      "side": 1,
+      "message": "also not present on 18.",
+      "revId": "41519e4fd3b4f70885fe7ba6b5489325d10353fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
