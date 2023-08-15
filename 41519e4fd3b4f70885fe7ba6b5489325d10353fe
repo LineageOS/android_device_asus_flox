@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20d0e8ba_eeb7b083",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-08-15T21:36:35Z",
+      "side": 1,
+      "message": "author: https://review.lineageos.org/c/LineageOS/android_device_google_marlin/+/361976",
+      "revId": "41519e4fd3b4f70885fe7ba6b5489325d10353fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
